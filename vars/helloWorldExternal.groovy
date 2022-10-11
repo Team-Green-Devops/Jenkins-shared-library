@@ -1,4 +1,4 @@
 def call(Map config = [:]) {
     loadLinuxScript(name: 'hello-world.bat')
-    sh "./hello-world.sh ${config.name} ${config.dayOfWeek}"
+    sh "./hello-world.bat ${config.name} ${config.dayOfWeek}"
 }
